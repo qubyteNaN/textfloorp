@@ -1,5 +1,5 @@
 #panel-sidebar-select-box {
-  margin: 8px;
+  margin: var(--tf-navbar-margin) !important;
   border: var(--border-width) solid var(--tf-border) !important;
   border-radius: var(--tf-rounding) !important;
   transition: border-color var(--tf-border-transition);
@@ -9,11 +9,12 @@
   }
   &::before {
     display: var(--tf-display-titles);
-    content:"sidebar";
+    content:"side";
+    text-align: var(--tf-floopsidebar-title-align);
     color: var(--lwt-text-color);
     background-color: var(--tf-bg);
     position: absolute;
-    margin: -0.85rem 0.85rem !important;
+    margin: -0.8rem auto !important;
     padding: 0 4px !important;
   }
   &:hover::before {
@@ -33,7 +34,7 @@
   display: none;
 }
 
-/*@media (-moz-bool-pref: "sidebar.revamp") {
+@media (-moz-bool-pref: "sidebar.revamp") {
   #sidebar {
     box-shadow: none !important;
   }
@@ -80,4 +81,4 @@
       }
     }
   }
-}*/
+}

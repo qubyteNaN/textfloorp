@@ -67,7 +67,7 @@
   }
   &::before {
     display: var(--tf-display-titles);
-    content: "navbar";
+    content: "nav";
     background-color: var(--tf-bg);
     position: absolute;
     /*margin: -16px 8px !important;*/

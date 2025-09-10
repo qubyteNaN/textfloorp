@@ -1,5 +1,12 @@
+#history-panel {
+  --firefoxsidebartype: "history";
+}
+#bookmarksPanel {
+  --firefoxsidebartype: "bookmarks";
+}
+
 #sidebar-box {
-  margin: 8px;
+  margin: var(--tf-navbar-margin) !important;
   border: var(--border-width) solid var(--tf-border) !important;
   border-radius: var(--tf-rounding) !important;
   transition: border-color var(--tf-border-transition);
@@ -7,17 +14,41 @@
   &:hover {
     border-color: var(--tf-accent) !important;
   }
+  /*&::before {
+    display: var(--tf-display-titles);
+    content: var(--firefoxsidebartype);
+    color: var(--lwt-text-color);
+    background-color: var(--tf-bg);
+    position: absolute;
+    margin: -0.85rem 0.85rem !important;
+    padding: 0 4px !important;
+  }*/
+  &:hover::before {
+    color: var(--tf-accent);
+  }
+}
+
+#history-panel {
   &::before {
     display: var(--tf-display-titles);
-    content: "tabs";
+    content:"history";
     color: var(--lwt-text-color);
     background-color: var(--tf-bg);
     position: absolute;
     margin: -0.85rem 0.85rem !important;
     padding: 0 4px !important;
   }
-  &:hover::before {
-    color: var(--tf-accent);
+}
+
+#bookmarksPanel {
+  &::before {
+    display: var(--tf-display-titles);
+    content:"history";
+    color: var(--lwt-text-color);
+    background-color: var(--tf-bg);
+    position: absolute;
+    margin: -0.85rem 0.85rem !important;
+    padding: 0 4px !important;
   }
 }
 

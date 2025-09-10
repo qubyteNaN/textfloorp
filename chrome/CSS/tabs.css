@@ -1,4 +1,4 @@
-box#vertical-tabs {
+#vertical-tabs {
   margin: 8px !important;
   border: var(--border-width) solid var(--tf-border);
   border-radius: var(--tf-rounding);
