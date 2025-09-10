@@ -6,7 +6,8 @@
 @import url("menus.css");
 @import url("navbar.css");
 @import url("overwrites.css");
-@import url("sidebar.css");
+@import url("firefoxsidebar.css");
+@import url("floorpsidebar.css");
 @import url("tabs.css");
 @import url("urlbar.css");
 
