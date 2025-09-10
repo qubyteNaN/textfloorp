@@ -18,5 +18,8 @@
   --tf-display-titles: flex; /* If titles (tabs, navbar, main etc.) should be shown, none = hidden, flex = shown */
   --tf-navbar-margin: 8px 8px 2px; /* navbar margin */
   --tf-navbar-padding: 4px; /* navbar padding */
-  --tf-floopsidebar-title-align: center /*if the narrow floorp sidebar title should be center aligned or right algined like everything else*/
+
+  /*new configs*/
+  --tf-floopsidebar-title-align: center; /*if the narrow floorp sidebar title should be center aligned or right algined like everything else*/
+  --tf-display-newtab-searchbar: block; /*if the search bar on about:newtab should be shown, none = hidden, block = shown*/
 }

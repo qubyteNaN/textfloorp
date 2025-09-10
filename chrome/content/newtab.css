@@ -33,19 +33,24 @@
     .wordmark {
       background: unset !important;
       width: unset !important;
-      &::before {
+    }
+  }
+  .non-collapsible-section {
+    &::before {
         content: var(--tf-newtab-logo);
+        text-align: center;
         white-space: pre-wrap;
         display: block;
         color: var(--newtab-contextual-text-primary-color);
         font-size: var(--tf-font-size);
         font-weight: 600;
       }
-    }
   }
+
 
   /* search bar */
   .search-wrapper {
+    display: var(--tf-display-newtab-searchbar);
     .search-handoff-button,
     input {
       border: var(--border-width) solid var(--newtab-border-color) !important;
