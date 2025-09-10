@@ -53,11 +53,11 @@
 }
 
 #nav-bar {
-  margin: var(--tf-navbar-margin);
+  margin: var(--tf-navbar-margin) !important;
   padding: var(--tf-navbar-padding) !important;
   border-top: var(--border-width) !important;
   border-style: solid !important;
-  border-width: var(--border-width);
+  border-width: var(--border-width) !important;
   border-color: var(--tf-border) !important;
   border-radius: var(--tf-rounding);
   transition: border-color var(--tf-border-transition) !important;
@@ -70,8 +70,9 @@
     content: "navbar";
     background-color: var(--tf-bg);
     position: absolute;
-    margin: -16px 8px;
-    padding: 0 2px;
+    /*margin: -16px 8px !important;*/
+    margin: -1.75rem 0rem !important;
+    padding: 0 2px !important;
   }
   &:hover::before {
     color: var(--tf-accent);
@@ -99,8 +100,8 @@
     content: "bookmarks";
     background-color: var(--tf-bg);
     position: absolute;
-    margin: -1.25rem .4rem;
-    padding: 0 2px;
+    margin: -1.25rem .4rem !important;
+    padding: 0 2px !important;
   }
   &:hover::before {
     color: var(--tf-accent);

@@ -1,6 +1,6 @@
 #sidebar-box {
   margin: 8px;
-  border: var(--border-width) solid var(--tf-border);
+  border: var(--border-width) solid var(--tf-border) !important;
   border-radius: var(--tf-rounding) !important;
   transition: border-color var(--tf-border-transition);
   background: var(--tf-bg) !important;
@@ -13,8 +13,8 @@
     color: var(--lwt-text-color);
     background-color: var(--tf-bg);
     position: absolute;
-    margin: -0.85rem 0.85rem;
-    padding: 0 4px;
+    margin: -0.85rem 0.85rem !important;
+    padding: 0 4px !important;
   }
   &:hover::before {
     color: var(--tf-accent);

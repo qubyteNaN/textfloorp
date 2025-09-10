@@ -1,8 +1,4 @@
-/*    __            __  ____            */
-/*   / /____  _  __/ /_/ __/___  _  __  */
-/*  / __/ _ \| |/_/ __/ /_/ __ \| |/_/  */
-/* / /_/  __/>  </ /_/ __/ /_/ />  <    */
-/* \__/\___/_/|_|\__/_/  \____/_/|_|    */
+/*textfloorp!*/
 
 @import url("browser.css");
 @import url("findbar.css");
@@ -17,6 +13,7 @@
 /* configurations - DO NOT CHANGE ORDER */
 @import url("defaults.css");
 @import url("config.css");
+@import url("logo.css");
 
 * {
   font-family: var(--tf-font-family);

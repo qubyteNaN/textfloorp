@@ -8,23 +8,23 @@ browser {
 
 #tabbrowser-tabbox {
   margin: 8px !important;
-  border: var(--border-width) solid var(--tf-border);
+  border: var(--border-width) solid var(--tf-border) !important;
   border-radius: var(--tf-rounding);
   padding: 8px !important;
   transition: border-color var(--tf-border-transition);
   &:hover {
     border-color: var(--tf-accent) !important;
     &::before {
-      color: var(--tf-accent);
+      color: var(--tf-accent) !important;
     }
   }
   &::before {
     display: var(--tf-display-titles);
-    content: "main";
-    background-color: var(--tf-bg);
+    content: "content";
+    background-color: var(--tf-bg) !important;
     position: absolute;
-    margin: -1.75rem 0rem;
-    padding: 0 4px;
+    margin: -1.75rem 0rem !important;
+    padding: 0 4px !important;
   }
 }
 

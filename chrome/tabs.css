@@ -28,10 +28,10 @@ box#vertical-tabs {
 
 #TabsToolbar {
   display: var(--tf-display-horizontal-tabs);
-  margin: 8px 8px 2px;
+  margin: 8px 8px 2px !important;
   border-top: var(--border-width) !important;
   border-style: solid !important;
-  border-width: var(--border-width);
+  border-width: var(--border-width) !important;
   border-color: var(--tf-border) !important;
   border-radius: var(--tf-rounding);
   transition: border-color var(--tf-border-transition) !important;
@@ -47,8 +47,8 @@ box#vertical-tabs {
     content: "tabs";
     background-color: var(--tf-bg);
     position: absolute;
-    margin: -1rem .75rem;
-    padding: 0 2px;
+    margin: -1rem .75rem !important;
+    padding: 0 2px !important;
   }
 
   #firefox-view-button[open] > .toolbarbutton-icon,
