@@ -6,3 +6,6 @@ user_pref("svg.context-properties.content.enabled", true);
 
 // CSS's `:has()` selector 
 user_pref("layout.css.has-selector.enabled", true);
+
+//transparency (optional)
+user_pref("browser.tabs.allow_transparent_browser", true)
