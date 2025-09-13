@@ -1,0 +1,8 @@
+/* path: chrome/config.css */
+:root {
+  --tf-display-horizontal-tabs: block; /* If horizontal tabs should be shown, none = hidden, block = shown */
+  --tf-display-nav-buttons: flex; /* If the navigation buttons (back, forward) should be shown, none = hidden, flex = shown */
+  --tf-display-urlbar-icons: none; /* If the icons inside the url bar should be shown, none = hidden, flex = shown */
+  --tf-display-sidebar-tools: flex; /* If the "Customize sidebar" button on the sidebar should be shown, none = hidden, flex = shown */ 
+  --tf-display-titles: flex; /* If titles (tabs, navbar, main etc.) should be shown, none = hidden, flex = shown */
+}
