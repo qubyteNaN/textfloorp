@@ -9,19 +9,14 @@
                                                                                                             
 ```
 
-_TextFox (https://github.com/adriankarlen/textfox) modified specifically for Floorp_
+textfloorp is a fork of textfox (https://github.com/adriankarlen/textfox) modified specifically for Floorp. Mostly meant for personal use.
 
-Ignore the readme for now.
+Readme in progress.
 
 ## Preview
 
-![image](https://github.com/adriankarlen/textfox/blob/main/misc/vertical-tabs.png)
-
-![image](https://github.com/adriankarlen/textfox/blob/main/misc/horizontal-tabs.png)
-
-> [!NOTE]
-> The color scheme used in the pictures is [Rosé Pine Moon](https://github.com/rose-pine/firefox).
-> `textfox` tries to not hard code any colors, [Firefox Color extension](https://addons.mozilla.org/en-US/firefox/addon/firefox-color/) is the
+Available later.
+> `textfloorp tries to not hard code any colors, [Firefox Color extension](https://addons.mozilla.org/en-US/firefox/addon/firefox-color/) is the
 > recommended approach to coloring Firefox with `textfox`.
 
 ## Prequisites
@@ -29,20 +24,6 @@ Ignore the readme for now.
 - Sidebery (optional)
 
 ## Installation
-
-### Installation script
-
-1. Download/clone the repo.
-2. Inside the download run `sh tf-install.sh` and follow the script
-   instructions.
-
-> [!IMPORTANT]
-> This script automates file writes, use with caution. 
-
-> [!NOTE]
-> The installation script copies to contents of the repos `chrome` directory to
-> the path specified, this way your `config.css` or any other `css`-files not
-> part of the repo will be kept.
 
 ### Manual
 
@@ -62,6 +43,13 @@ Ignore the readme for now.
 > If you don't want to use the provided user.js, please read through it and
 > apply the settings in `about:config` manually. These are needed for the css to
 > work.
+
+## Unsupported Settings
+Some settings in Firefox or Floorp do not work.
+### Firefox Settings
+> Currently only horizontal tabs work properly
+### Floorp Settings
+> Floorp sidebar is intended to be on the right. Margin has to be manually edited for sidebar on the left.
 
 
 ### Sidebery
@@ -102,32 +90,6 @@ border radius it would look like this:
 :root {
   --tf-rounding: 4px;
 }
-```
-
-#### Defaults
-```css
-:root {
-  --tf-font-family: "SF Mono", Consolas, monospace; /* Font family of config */
-  --tf-font-size: 14px; /* Font size of config */
-  --tf-accent: var(--toolbarbutton-icon-fill); /* Accent color used, eg: color when hovering a container  */
-  --tf-bg: var(--lwt-accent-color, -moz-dialog); /* Background color of all elements, tab colors derive from this */
-  --tf-border: var(--arrowpanel-border-color, --toolbar-field-background-color); /* Border color when not hovered */
-  --tf-border-transition: 0.2s ease; /* Smooth color transitions for borders */
-  --tf-border-width: 2px; /* Width of borders */
-  --tf-rounding: 0px; /* Border radius used through out the config */
-  --tf-margin: 0.8rem; /* Margin used between elements in sidebery */
-  --tf-text-transform: none; /* Text transform to use */
-  --tf-display-horizontal-tabs: none; /* If horizontal tabs should be shown, none = hidden, block = shown */
-  --tf-display-window-controls: none; /* If the window controls should be shown (won't work with sidebery and hidden horizontal tabs), none = hidden, flex = shown */ 
-  --tf-display-nav-buttons: none; /* If the navigation buttons (back, forward) should be shown, none = hidden, flex = shown */
-  --tf-display-urlbar-icons: none; /* If the icons inside the url bar should be shown, none = hidden, flex = shown */
-  --tf-display-sidebar-tools: flex; /* If the "Customize sidebar" button on the sidebar should be shown, none = hidden, flex = shown */ 
-  --tf-display-titles: flex; /* If titles (tabs, navbar, main etc.) should be shown, none = hidden, flex = shown */
-  --tf-newtab-logo: "   __            __  ____          \A   / /____  _  __/ /_/ __/___  _  __\A  / __/ _ \\| |/_/ __/ /_/ __ \\| |/_/\A / /_/  __/>  </ /_/ __/ /_/ />  <  \A \\__/\\___/_/|_|\\__/_/  \\____/_/|_|  ";
-  --tf-navbar-margin: 8px 8px 2px; /* navbar margin */
-  --tf-navbar-padding: 4px; /* navbar padding */
-}
-
 ```
 
 ### Changing the new tab logo
