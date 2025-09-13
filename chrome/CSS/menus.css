@@ -9,7 +9,8 @@ slot[part="content"] {
   border-width: var(--border-width) !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  color: var(--tf-accent) !important;
+  background-color: var(--tf-accent) !important;
+  background-size: cover !important;
 }
 
 #appMenu-popup {
