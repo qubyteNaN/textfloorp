@@ -1,21 +1,21 @@
 /*textfloorp!*/
 
-@import url("browser.css");
-@import url("findbar.css");
+@import url("./chrome/browser.css");
+@import url("./chrome/findbar.css");
 
-@import url("menus.css");
-@import url("icons.css");
-@import url("navbar.css");
-@import url("overwrites.css");
-@import url("firefoxsidebar.css");
-@import url("floorpsidebar.css");
-@import url("tabs.css");
-@import url("urlbar.css");
+@import url("./chrome/menus.css");
+@import url("./chrome/icons.css");
+@import url("./chrome/navbar.css");
+@import url("./chrome/overwrites.css");
+@import url("./chrome/firefoxsidebar.css");
+@import url("./chrome/floorpsidebar.css");
+@import url("./chrome/tabs.css");
+@import url("./chrome/urlbar.css");
 
 /* configurations - DO NOT CHANGE ORDER */
-@import url("defaults.css");
-@import url("config.css");
-@import url("logo.css");
+@import url("./config/defaults.css");
+@import url("./config/config.css");
+@import url("./config/logo.css");
 
 * {
   font-family: var(--tf-font-family);

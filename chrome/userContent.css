@@ -4,11 +4,11 @@
  /* / /_/  __/>  </ /_/ __/ /_/ />  <    */
  /* \__/\___/_/|_|\__/_/  \____/_/|_|    */
 
-@import url("../content/sidebery.css");
-@import url("../content/about.css");
-@import url("../content/newtab.css");
+@import url("./content/sidebery.css");
+@import url("./content/about.css");
+@import url("./content/newtab.css");
 
 /* configurations - DO NOT CHANGE ORDER */
-@import url("defaults.css");
-@import url("config.css");
-@import url("logo.css");
+@import url("./config/defaults.css");
+@import url("./config/config.css");
+@import url("./config/logo.css");
