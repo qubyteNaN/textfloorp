@@ -6,14 +6,24 @@
 /*fix for autoscroller*/
 .autoscroller {
 /*   --panel-border-color: transparent !important; */
-  --border-width: 0px !important;
-  --panel-background: url("chrome://global/skin/icons/autoscroll.svg") !important;
+  --border-width: 1px !important;
+  mask-image: url("chrome://global/skin/icons/autoscroll.svg") !important;
+  height: 100px !important;
+  width: 100px !important;
+  margin: -50px !important;
+  padding: 5px !important;
+  /* mask-clip: fill-box !important; */
+  mask-repeat: no-repeat !important;
+  mask-position: contain !important;
+  mask-size: auto !important;
+  mask-origin: padding-box !important;
+  overflow: visible !important;
 }
 .autoscroller[scrolldir="NS"] {
---panel-background: url("chrome://global/skin/icons/autoscroll-vertical.svg") !important;
+  mask-image: url("chrome://global/skin/icons/autoscroll-vertical.svg") !important;
 }
 .autoscroller[scrolldir="EW"] {
-  --panel-background: url("chrome://global/skin/icons/autoscroll-horizontal.svg") !important;
+  mask-image: url("chrome://global/skin/icons/autoscroll-horizontal.svg") !important;
 }
 
 

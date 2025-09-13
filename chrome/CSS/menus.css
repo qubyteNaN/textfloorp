@@ -6,11 +6,10 @@ panel {
   --panel-separator-color: var(--tf-border) !important;
 }
 slot[part="content"] {
-  border-width: var(--border-width) !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  color: var(--tf-accent) !important;
-  background-size: contain !important;
+  /* border-width: var(--border-width) !important; */
+  border: 1px solid black !important;
+  background-color: var(--tf-accent) !important;
+  
 }
 
 #appMenu-popup {
