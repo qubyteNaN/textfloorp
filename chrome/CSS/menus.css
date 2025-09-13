@@ -7,6 +7,9 @@ panel {
 }
 slot[part="content"] {
   border-width: var(--border-width) !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  color: var(--tf-accent) !important;
 }
 
 #appMenu-popup {
